@@ -1,0 +1,251 @@
+Source;URL;Title;Transcript
+ECOSIO;https://ecosio.com/en/webinars/;EDI-Optimisation;"Given the significant benefits that supply chain automation can bring, it’s important to ensure that your document exchange processes are as efficient as possible. Yet whilst most businesses recognise the impact of a reliable and future-proof EDI solution, too many persevere with outdated and overly complex systems under the misapprehension that EDI optimisation requires significant internal effort and is likely to disrupt business.
+
+In this webinar series we explore the practical steps you can take to improve your EDI landscape, from identifying the right type of solution, to reducing VAN costs and minimising pressure on internal teams.
+
+Click on the webinars to learn more and add to your calendar!"
+ECOSIO;https://ecosio.com/en/webinars/;EDI in Your ERP System;"In these webinars we look at how deep EDI integration works in various different ERP systems, what fully managed EDI via the cloud can really do, and why more and more companies are relying on it.
+
+By drawing on real life examples, offering practical tips, and pointing out common B2B integration mistakes, we’ll help you find the perfect EDI solution for your unique situation.
+
+For details and registration, simply click on the respective webinar."
+ECOSIO;https://ecosio.com/en/webinars/;EDI and E-invoicing in SAP® Systems ;"With automation becoming an increasingly essential part of modern supply chains (particularly in the light of new European e-invoicing regulations), more and more companies are looking to improve their current EDI processes. Given the wealth of different SAP systems and solutions available, however, deciding on the best option can be a particularly confusing task for SAP users.
+
+To help those in this situation, in these webinars ecosio’s experts explore the subject of EDI integration in SAP systems in detail, looking at everything from how the different solutions compare, to how to integrate EDI and e-invoicing successfully in specific SAP platforms.
+
+Click on the webinars to learn more!"
+ECOSIO;https://ecosio.com/en/webinars/;E-invoicing and Peppol;"In view of the increasingly strict legal regulations on electronic invoicing (particularly in Europe), e-invoicing and Peppol are being used by more and more businesses every day.
+
+In these webinars we explore a variety of topics, from the basics of e-invoicing to the current situation and how best to achieve compliance.
+
+For details and registration, simply click on the respective webinar."
+GEFEG;https://news.gefeg.com/de/event/xml-schema-grundlagen-fuer-edi-training/;XML Schema Basics for EDI – Training;"Why learn more about XML schemas basics for EDI? Being EDI specialists, we aim to introduce you to XML schema basics from the perspective of electronic data interchange and related processes. The use of XML schema for defining structures and describing content is constantly growing. As is its use for exchanging business messages and data content with EDI processes, web applications or for APIs. Our GEFEG.FX Software offers extensive functions for schema development and content specification of schemas.
+
+In our XML Schema Basics training, we provide basic knowledge and fundamental understanding of XML in the context of EDI activities of companies and organizations. We introduce you to the technical basics of XML documents, elements and attributes, and schema languages before explaining four XML schema design principles and their practical use. We also cover other XML formats, such as Schematron, as well as the implementation of XML for EDI and XML standards, such as OAGIS, ISO 20022, UBL, ZUGFeRD.
+
+Any questions about the webinar and/or input on other webinar topics? We are looking forward to your email.
+What will you learn in the course?
+
+Participants gain basic knowledge of the technical principles of XML and know that XML documents must follow the structural specifications of XML schemas. You will learn how XML is used for data exchange and know important XML standards.
+Who should attend?
+
+Members of business departments, EDI project groups, IT and EDI departments as well as EDI and eBusiness consultants who want to acquire basic knowledge about XML Schema for EDI. For employees who want to work with GEFEG.FX Schema functions when the introduction of an XML standard is imminent and for those switching from EDIFACT to XML who want to learn the technical basics of XML Schema."
+GEFEG;https://news.gefeg.com/en/event/develop-xml-schemas-for-edi-and-immediately-reduce-maintenance-effort-with-gefeg-fx-software-training-3/2022-10-20/;Develop XML schemas for EDI and immediately reduce maintenance effort with GEFEG.FX software – Training;"Increasingly, companies are using XML Schema to develop their EDI specifications. The use of classic EDI standards for data exchange is thus being supplemented by XML Schema as a further data exchange format. The focus of XML Schema development with GEFEG.FX is clearly on schemas for business data. As an alternative to the development of your own, company-specific XML schemas, you can use established XML standards in GEFEG.FX, adapt them to your requirements in a time-saving manner using the software’s guide technology, e.g. CEFACT XML, GS1 XML, OAGIS or UBL, and drastically reduce your future maintenance effort.
+
+In this training, users receive a sound introduction to XML Schema development with GEFEG.FX. Of course, the practical part is carried out with the GEFEG.FX software. As an introduction, the basics of XML Schema are repeated. Then it will be explained how GEFEG.FX can be used to build your own schemas or to document existing ones based on established eBusiness standards, such as GS1 XML, ISO 20022, OAGIS, ZUGFeRD). The participants thus get an introduction to the comprehensive software support for the creation of XML schema specifications, in order to be able to work independently with the software afterwards. Users who use both classic EDI standards and XML Schemas, can use the mapping functions support in GEFEG.FX for the integration of different data exchange formats.
+Topics of the “Develop XML schemas for EDI and immediately reduce maintenance effort with GEFEG.FX software” training
+
+    The XML Schema Editor in GEFEG.FX
+    Developing an XML Schema based on a paper form
+    Schema design principles
+    Schema functions in GEFEG.FX
+    Working with XML Schema Guides according to GEFEG.FX Guide Technology
+    Variants in the XML Schema Guide
+    Creating human-readable documentation
+    Importing and exporting XML schemas
+    Validation: Testing XML instances against a schema, validating XML schema variants
+    Mapping: Mapping projects with schemas and EDI Guide, mapping templates
+
+What will you learn in the course?
+
+You will know how to use GEFEG.FX for schema development in order to import your own schemas or to specify existing schemas (e.g. CEFACT XML, GS1 XML, OAGIS, UBL), in order to document them. You have learned how to validate XML instances against XML schemas and which comparison functions you can use. You will also be familiar with the mapping principle of GEFEG.FX and be able to apply it.
+Who should attend?
+
+Users who want to use XML Schemas for business data and data exchange procedures. As well as users who want to reuse existing XML schemas and document the company or organization-specific usage and thereby drastically reduce their future maintenance efforts."
+GEFEG;https://news.gefeg.com/en/2021/09/apis-in-supply-chain-management-the-end-of-edi/;Web APIs auf Basis von OpenAPI 3 – 13. Training;"Use and advantages of APIs and EDI in data exchange processes in the Supply Chain
+
+In the world of EDI, industry-specific standards play an essential role. Uniform implementations of electronic data exchange make systems stable, but also sluggish. In contrast, real-time supply chain management with APIs become possible – transparent and controllable. However, a comprehensive, cross-organisational or even cross-industry implementation often fails due to a lack of standards. Nevertheless, APIs are seen as the way of the future. Some are already predicting an imminent end to EDI. But is that really the case? After weighing the pros and cons, APIs are the future of data exchange. They will replace particularly time-critical EDI processes in the future. EDI will remain with established processes.
+APIs in Supply Chain Management – Do APIs herald the end of EDI?
+
+Supply chain management became established in Germany in the mid-1990s. It stands for overcoming internal and external company boundaries. The holistic approach focuses on controlling and improving all production steps. Starting with planning, through procurement and production to distribution, all steps of data exchange are covered. Furthermore, this also includes activities that are not within the sphere of influence of a single company.
+
+The key to success lies in a seamless, automatable flow of information. For this purpose, business processes such as ordering or invoicing are digitally mapped. But time-critical processes, such as those that occur in just-in-time production, are also (partially) automated. What sounds excellent in theory often reaches its limits in practice. Even in the 2020s, common EDI standards are still derived from standards from the 1990s. And this despite the fact that more up-to-date versions have long been available. In addition to the “never-touch-a-running-system” principle, there is also the fact that EDI standards allow many options. In practice, such an open standard leads to a multitude of implementations that deviate from each other to a greater or lesser extent. It must be ensured that all partners involved in the data exchange implement the same variant of a standard. Thus, in practice, standards are degraded to application recommendations.
+An alternative approach
+
+The data exchange itself is document- or message-oriented. This means that even with small changes to the business process, the entire message must be coordinated with all partners involved and implemented by all of them on the same deadline.
+
+APIs are seen by many as a way out of this dilemma. Even though APIs could be used to transport the same messages from A to B, this is not the idea behind them. Rather, by breaking down the document and message structures, they make it easier to carry out these and entirely new business processes. Supply chain management in real time with APIs is the proclaimed goal. So do APIs herald the end of EDI? A resounding yes.
+APIs the drivers of interconnectivity
+
+APIs are the electronic connective tissue of our global world today. They are now included in almost every piece of software that communicates with other software, for example via the internet. As a means of B2B data transfer, however, they are quite new. For companies, they bring cost advantages, efficiency gains and increased service quality. They improve existing or even enable the implementation of new business processes. It is not for nothing that a study by McKinsey put the expected profit potential of APIs at one trillion US dollars.
+
+With the help of a sensibly designed API, systems that are independent of each other can communicate with each other. The API “lies” between the two systems, so to speak. It builds the bridge between the systems and specifies the format and type of data transmission. But EDI can do that too. It gets exciting when APIs are part of the business logic. For example, they are not used exclusively for data transport, but also take on service tasks. For example, they notify a system when certain conditions are fulfilled in another system. Most people know this when they have ordered something in an online shop. They automatically receive a message when the delivery of the package is not far in the future. If implemented correctly, they offer another decisive advantage over EDI: supply chain management in real time with APIs.
+Real-time supply chain management with APIs
+
+This aspect opens up the possibility for companies to cooperate even more closely with each other. Information is shared more quickly across multiple stages of the supply chain. Large logistics service providers often even use several APIs to improve their warehouse management. Via Inventory Management APIs, B2B customers’ systems are informed in real time about the current stock level of a certain product or about free delivery capacities. Thus, customers view stock levels directly in a web shop in real time.
+
+Ordering rhythms and process chains can be managed more precisely via such APIs. This offers decisive competitive advantages over other market participants. In order to use an API successfully, however, a number of requirements must be met.
+Barriers in API development
+
+At first it must first be defined what the API is supposed to do. What exact service is to be provided? With which existing systems should it interact? Should the API be freely accessible or only for a closed group of participants? How many queries of the API are expected? And last but not least: What business model is to finance the API? The first two points in particular must be made comprehensible to outsiders so that they can understand the API and use it properly. In addition, data protection aspects must also be considered in order to avoid misuse of the API. Not to mention that there are also intensive testing and iteration phases. But is the effort worth it and can an SME even afford such a thing?
+
+Yes, because the hurdles from a developer’s point of view are much lower than in the EDI world. EDI development usually requires specialists or the corresponding service providers. The further away the partners are from the established EDI markets, the more difficult it is to find the required knowledge and experience. Today’s developers, however, have grown up with APIs around the globe. This is because the current APIs originally come from the provision of services on mobile devices. This starts with map displays and navigation and goes all the way to automatic translator APIs that provide videos with automatically generated subtitles.
+
+The specification of APIs is also comparatively simple. Especially if the tools used allow the existing data structures to continue to be used.
+EDI – a phase-out model?
+
+EDI is still the established approach for transmitting structured business-relevant data in the B2B environment. Several aspects speak for a positive future of EDI. The connections established between companies have existed for many years. Certain EDI standards have become established within the industry. Not adhering to these standards usually means having to adapt the established contracts. Successful EDI projects serve as a reference. Their data structures form the blueprint for further implementations. Harmonised EDI workflows have also developed for data exchange between industries through converter software and mappings. Through years of work, developers and supporters know what to look for when fixing errors or setting up a new EDI connection. In many cases, EDI is considered very reliable by companies because they have been using the same message standard since the 1990s. Never change a running system is the motto here.
+
+What speaks against EDI is the lower flexibility and scalability. APIs are designed to be flexible in their functionality and to be used by a varying number of users at the same time. At the same time, they only transmit the concretely required part of the information. EDI messages, on the other hand, can be so extensive that it is technically almost impossible to transmit updated information in a time window shorter than 15 to 30 minutes. The focus on the exchange of business documents entails high maintenance and servicing costs.
+
+Unlike the use of APIs, when an EDI message is sent, the sender does not receive an acknowledgement of receipt or a response immediately by default. Of course, something like this can also be realised with EDI. However, this means the implementation of additional (return) messages.
+So is the API the solution par excellence?
+
+Today, the benefits of API are often offset by the need for greater collaboration to achieve communication standards. Instead of reusing uniform data structures as in EDI processes, APIs are implemented in a company-specific way. This is especially important when new trading partners are connected. Often, the larger partners specify the APIs to be used to their suppliers or customers. However, at the latest when there is to be cross-industry or cross-process communication, major incompatibility hurdles arise. But it is precisely at this point that initiatives such as those currently being pursued by large standardisation organisations offer hope.
+A clear yes and no to EDI
+
+In conclusion, as an “old” basic technology, EDI works well, but it also has its limits. For companies, introducing a new technology for functioning processes means taking staff away from day-to-day business and thus risking a decline in the company’s performance. With this knowledge in mind, it seems quite unlikely that companies will completely replace EDI (in the short term). Established EDI processes are often mission-critical. They will remain in place unless there is a compelling reason to replace them. APIs are the future of data exchange. For the foreseeable future, however, they should be viewed as complementary to EDI. They will be introduced at an early stage, especially when particularly time-critical processes need to be optimised. Thus, real-time supply chain management with APIs is a realistic approach. However, a complete replacement of EDI is not."
+GEFEG;https://news.gefeg.com/en/event/free-webinar-harmonising-data-in-the-transport-sector-the-why-and-the-how/;Free webinar: Harmonising data in the transport sector – the Why and the How;"Data harmonization across and within the transport sector is very important and advantageous for exchange of data to support the business data exchanges of transport contracts, cargo operations, consignment and shipment tracking covering single or multimodal business processes. This closes the common gap between business and technical experts resulting in provides increased interoperability between the various involved parties supporting the transportation aspects of international supply chains.
+UN/CEFACT Multi Modal Transport Reference Data Model
+
+The UNCEFACT Multi Modal Transport Reference Data Model (MMT RDM) is a set of harmonised semantic structures covering all the data used in the transport and logistics sector for electronic data exchange and interoperability. The MMT RDM can be used as a key building block to support your implementation and data harmonization across any transport related documents.
+
+During this webinar you will get to know the different component objects of MMT and receive comprehensive information on the concept, methodology and benefits of data harmonisation though the use of MMT RDM.
+Topics of our webinar on Harmonising data in the transport sector – the Why and the How
+
+    Reuse MMT for data harmonization and designing data exchanges with GEFEG.FX
+    Contextualize MMT according to your business needs
+    Use MMT publication artefacts for implementation including XSD exports
+
+Any questions about the webinar and/or input on other webinar topics? We are looking forward to your email.
+Who should participate?
+
+Actors in the transport and logistics domain who need to plan and implement data exchanges based on UNCEFACT MMT RDM and benefitting from the unique customisation functionalities provided by the GEFEG.FX tool for specification and documentation of their MMT-based data exchange subsets."
+GEFEG;https://news.gefeg.com/en/event/data-formats-in-the-edi-environment-4/;Data formats in the EDI environment;"UN/EDIFACT, Flatfile, GS1 EANCOM®, SAP IDoc, Odette Recommendations and others: More about the most common data formats and EDI standards in the EDI environment
+
+Why should you learn more about EDI data exchange formats or EDI standards? They include the technical format descriptions and at the same time offer a content framework for data exchange – thus providing an important basis for exchanging exactly the information required for smooth electronic data exchange.
+
+EDI (Electronic Data Interchange) is often considered to be the same as EDIFACT. Yet EDI comprises all standards that replace the paper document in the B2B and B2C environment. In this training you will not only get to know the industry-independent EDI standard UN/EDIFACT, but also gain insights into other EDI standards, such as GS1 EANCOM® and the new VDA Recommendations: these are based on EDIFACT and have been further specified with a focus on a specific industry. In order to identify the similarities and differences, we introduce you to features and structures of these eBusiness standards.
+Topics of the “Data formats in the EDI environment” training
+
+    Data exchange formats and EDI standards for electronic data exchange
+    Record and field, grouping of records and fields, header and trailer record
+    Structure, features, similarities and differences of various exchange formats for EDI
+    Differentiation as to XML based standards
+    Other data standards: Tradacoms, ASC X12, CSV, Flat-file, GS1 XML, SEPA XML, ISO20022 XML.
+
+Any questions about the webinar and/or input on other webinar topics? We are looking forward to your email.
+What will you know afterwards?
+
+You will know the important data exchange formats and EDI standards and be able to identify which special features they have. You will know how to handle the formats and how to read the formats with which tools.
+Who should attend?
+
+EDI newbies. Members of business departments, EDI project groups, IT and EDI departments. EDI and eBusiness consultants who want to gain knowledge of the important data exchange formats for EDI as well as employees with tasks in the area of data conversion."
+ECOSIO;https://ecosio.com/en/solutions/webedi-with-supplier-portal/ ;"Central governance for suppliers via Web EDI
+and modular supplier portals";"Not all suppliers can or should be connected via classic EDI. For these partners Web EDI offers the perfect solution. Web EDI allows partners to exchange EDI documents via a simple web portal following a one-time setup (there’s no need for subsequent setups for future suppliers). The portal is then accessible to suppliers via a login.
+
+The same advantages. Only more of them. For you, there are no discernible differences to classic EDI. Our Web EDI thus offers you the same advantages as classic EDI connections:
+
+    An optimised and fully digitised B2B partner network with central governance
+    Cost and time savings through automation
+    Relief for internal teams
+    Proactive, ongoing monitoring and maintenance
+
+Due to its high process configurability, Web EDI from ecosio can be used across all industries. Whether you’re in automotive, manufacturing, retail, trade or any other industry, ecosio Web EDI offers futureproof automated connections to your partners.
+
+We make sure your solution fits! The ecosio supplier portal enables you to manage your supplier network comprehensively as it’s integrated directly into your existing ERP system via ecosio’s unique API. Relevant modules can then be activated as required.
+
+    Supplier database: Key supplier master data information available at a glance.
+    Supplier self-disclosure: User-friendly application platform for potential new suppliers.
+    Supplier performance: Visualisation of key supplier figures and metrics, including a helpful filter function.
+    Demand preview: Provided data for demand previews can be downloaded by the supplier summarised by days/weeks/months.
+    Document management: Facilitates the provision, classification and secure exchange of documents (such as z. e.g. technical drawings or contracts) – closely linked to Web EDI.
+    Supplier communication: Bundle the communication with your suppliers at a central point. Reduce media discontinuities and get an overview of all communication with suppliers.
+    Quality management: Processes for complaints, sampling and special releases can be detailed directly in the ERP and made available to your suppliers via the supplier portal.
+
+Keep your suppliers smiling :)
+
+…as well as your internal teams. Because Web EDI from ecosio is so simple and easy to use, it has a high level of acceptance among suppliers. This makes onboarding quick and hassle-free for everyone involved.
+
+Trust is good. Our Web EDI is better. You retain full control over the Web EDI portal made available to suppliers and can determine which fields in the corresponding order response
+documents can be customised by the supplier. In a nutshell: the Web EDI portal can be fully customised to suit your requirements.
+
+Upgrade at any time. If the volume of documents becomes too large for a supplier and a switch to classic EDI is desired, no effort is required from you. Instead, the process is managed from start to finish by ecosio’s experts, who will work directly with the supplier in question.
+"
+GEFEG;https://www.gefeg.com/en/gefeg-portal.html;GEFEG.Portal;"GEFEG.Portal - central and configurable for your applications
+
+Efficient collaboration of IT and business experts in and between companies, industries or projects, nationally and internationally, a high quality of the developed data descriptions and the resulting data as well as a shortened period from the analysis of the requirements to the implementation.
+
+To achieve these goals, the GEFEG.portal offers a solution for collaboration, validation, publishing, visualization, change request management as well as rollout and onboarding support.
+
+The GEFEG.Portal supports you and your EDI partners
+
+    • in the management of requirements or change requests for the development of eBusiness interfaces
+    • in the development and publication of eBusiness interfaces, e.g. B2B / EDI / EAI / A2A standards and formats as well as guidelines
+    • during error checking in eBusiness interfaces
+    • in rollout and onboarding scenarios.
+
+
+With the GEFEG.Portal , our customers benefit from GEFEG's 25 years of commitment and expertise in eBusiness Interface Management.
+
+Are you interested to learn more about how you can use the GEFEG.portal? Call us or send your request for the use of GEFEG.portal in your company by E-mail.
+
+
+    • Efficient collaboration for managing interfaces
+    • High quality of data descriptions and resulting data
+    • Faster from requirements analysis to implementation
+    • Self-testing of messages by EDI partners - Considerable reduction of the test effort at the recipient's premises
+    • Improve interoperability and compliance
+    • Single point of contact with a complete workflow for the management of eBusiness interfaces
+    • Flexible configuration of the portal to the needs of the user group
+    • Desktop software GEFEG.FX for eBusiness Interface Design and for the transfer of guidelines to the portal for publication and testing
+    • 24/7 availability
+    • White Labeling: Adaptation of the interface to the ""look and feel"" of your website layout
+
+
+The following overview shows the most important functions. For more information, just ask us.
+
+Publication of eBusiness Interfaces
+
+Publish specifications, XML schema files and other deliverables and make them available for download. A central point to make important specifications quickly accessible and to promote governance. Custom views and filters allow easier handling of uploaded artifacts.
+
+Tracking and management of requirements or change requests
+
+Enter and track requirements or change requests and view the current status. Centralize the process to avoid time-consuming searching and data loss. The entries can be filtered according to various criteria.
+
+Validation and visualization
+
+Compliance check of messages based on guidelines and business rules. Upload instances for checking and check that they comply with the specification. Supports user communities to implement identical interfaces to achieve interoperability. In rollout or onboarding scenarios, your EDI partners check the messages themselves without your involvement.
+
+Task Management
+
+Task management via tracking system. Organize the internal work of users. Faster tracking of tasks assigned to users.
+
+News
+
+Communication with the portal user community via a news area. Inform users about corrections, updates, new versions and other topics.
+
+Download area
+
+Provided data, e.g. test data, are available for download for the user community.
+
+Admin area
+
+Configure the portal as an administrator. Set up user groups or define and customize views to accommodate specific requirements and workflows in different areas. All configuration data can be exported as XML file."
+GEFEG;https://www.gefeg.com/de/firmenprofil.html;About us;"
+
+GEFEG supports its customers in the planning and quality assurance of the electronic handling of business processes. Based on national and international standards, a consistent data flow between all involved partners is guaranteed. GEFEG has developed innovative software solutions and methods for this purpose. As a service provider with international experience, GEFEG offers consulting, software and training.
+
+Through its participation in national and international standardization committees, GEFEG provides development contributions and has an information and development advantage that also benefits its customers.
+
+GEFEG has established itself as a consulting company for demanding projects in the electronic exchange of business data. Projects for large companies (DB Cargo), administration (G7-EDI customs group), organisations (Global Automotive Industry North America, Asia and Europe) and medium-sized companies (dental technology, freight forwarders, automotive suppliers, tyre industry) were supported. The consulting services are rounded off by a practice-oriented training program.
+
+The in-house developed software GEFEG.FX serves the modeling of interfaces as well as the specification of B2B/EDI standards such as UN/EDIFACT, ebXML, GS1 EANCOM®, X.12, SAP-IDoc or RosettaNet and OAGIS. GEFEG.FX is the only software that combines modelling, XML schema development and editing of classical EDI standards under one roof and allows the development of multilingual application descriptions (Implementation Guidelines).
+
+Internet-based software products such as the GEFEG portal support organisations and companies with sophisticated test and administration functions that can be used in rollout scenarios, onboarding processes or campaigns, for example.
+
+GEFEG - Gesellschaft für Elektronischen Geschäftsverkehr mbH is a private, owner-managed company founded in 1990."
+ECOSIO;https://ecosio.com/en/vision-mission-and-values/ ;About us;"To maximise supply chain efficiency through automated B2B communication.
+
+Our vision is derived from our strong belief that automated communication is better than all its alternatives. Automated communication helps to energise enterprises and accelerate their growth by transforming how commerce-critical information is exchanged, converted, processed and monetised.
+
+This leads to stronger supply chains, increased availability of goods & services and more efficient use of resources – thus ultimately benefiting everyone.
+
+Optimising B2B networks through innovative cloud-based solutions. Built on outstanding technology and service; driven by passion.
+
+We specialise in technology and service for B2B Integration – focusing on EDI, supplier portals and e-invoicing. The sustainable, cloud-based design of our Integration Hub, which is constantly being improved, enables us to optimise our solutions for flexibility, reliability and user experience.
+
+We build, extend and share our profound expertise across B2B processes to establish long-lasting relationships and provide outstanding service. Our shared values and passionate attitude unite us as a team and allow us to excel. We create and maintain Connections That Work, enabling our clients to focus on their core business.
+
+
+A clear set of values helps us understand what we stand for. Our values give us orientation for our work and a sense of security, especially in times of change. Having formulated them increases the probability of making the right decisions and directs our activities towards achieving our vision and long-term goals. Therefore we bundle our efforts in harmony with the following values:"
