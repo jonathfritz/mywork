@@ -22,6 +22,7 @@ def clean_text(text):
     text = re.sub('\w*\d\w*', '', text)
     return text
 
+# open and use the source file with all the text messages that should be analysed
 with open('Quellen.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     for columns in csv_reader:
