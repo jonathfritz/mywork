@@ -4,8 +4,9 @@ import numpy as np
 import textstat
 import re
 import string
-
+import textstat
 import nltk
+from transformers import pipeline
 
 
 # Step 1: Read in Data
@@ -20,21 +21,28 @@ def clean_text(text):
     text = re.sub('\w*\d\w*', '', text)
     return text
 
+# die Artikel und Textpassagen aus dem Excel-File werden in das Programm hochgeladen
 with open('Quellen.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     for columns in csv_reader:
-        # defining GEFEG as the analyzed target
+        # An dieser Stelle werden die Quellen von GEFEG einzelnd untersucht
+        if columns[0] == 'ECOSIO':
+            Ecosio_cleaned_text = clean_text(columns[3])
+            Ecosio_normal_text = columns[3]
+
+with open('Quellen.csv', 'r') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=';')
+    for columns in csv_reader:
+        # An dieser Stelle werden die Quellen von GEFEG einzelnd untersucht
         if columns[0] == 'GEFEG':
-            print(columns)
+            GEFEG_cleaned_text = clean_text(columns[3])
+            GEFEF_normal_text = columns[3]
 
 
+print('GEFEG Flesh Reading Score: ' + textstat.flesch_reading_ease(GEFEF_normal_text))
+print('Ecosio Flesh Reading Score: ' + textstat.flesch_reading_ease(Ecosio_normal_text))
 
 
-
-#textstat.flesch_reading_ease(text)
-
-#pip install -q transformers
-#from transformers import pipeline
-#sentiment_pipeline = pipeline("sentiment-analysis")
+sentiment_pipeline = pipeline("sentiment-analysis")
 #data = ["I love you", "I hate you"]
 #sentiment_pipeline(data)
