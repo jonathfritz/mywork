@@ -1,7 +1,7 @@
 import csv;
 import pandas as pd
 import numpy as np
-
+import textstat
 import re
 import string
 
@@ -24,8 +24,9 @@ with open('Quellen.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     for columns in csv_reader:
         # defining GEFEG as the analyzed target
-        #if columns[0] == 'GEFEG':
+        if columns[0] == 'GEFEG':
             print(columns)
+
 
 
 
