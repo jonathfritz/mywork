@@ -1,8 +1,6 @@
 import csv;
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 import re
 import string
@@ -26,9 +24,16 @@ with open('Quellen.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     for columns in csv_reader:
         # defining GEFEG as the analyzed target
-        if columns[0] == 'GEFEG':
-            print(clean_text(columns[3]))
+        #if columns[0] == 'GEFEG':
+            print(columns)
 
 
 
 
+#textstat.flesch_reading_ease(text)
+
+#pip install -q transformers
+#from transformers import pipeline
+#sentiment_pipeline = pipeline("sentiment-analysis")
+#data = ["I love you", "I hate you"]
+#sentiment_pipeline(data)
