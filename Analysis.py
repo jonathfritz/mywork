@@ -47,18 +47,18 @@ with open("Quellen.csv", "r") as csv_file:
         if skip_header:
             skip_header = False
             continue
+        if row[0] == "ECOSIO":
+            print('Ecosio Flesh Reading Score: ' + str(textstat.flesch_reading_ease(row[3])))
         if row[0] == "GEFEG":
-            print(i)
-        i += 1
-        if row[0] == "Ecosio":
-            print(i)
+            print('GEFEG Flesh Reading Score: ' + str(textstat.flesch_reading_ease(row[3])))
+
         i += 1
 
 
 # Die beiden Textkorpusse werden jeweils seperat auf ihre Lesefreundlichkeit gemessen.
 # Da die Satzzeichen bei diesem Test eine wichtige Rolle spielen, wurden für diesen Test die orginalen Textpassagen ohne Überabrietung genutzt.
-print('GEFEG Flesh Reading Score: ' + str(textstat.flesch_reading_ease(GEFEF_normal_text)))
-print('Ecosio Flesh Reading Score: ' + str(textstat.flesch_reading_ease(Ecosio_normal_text)))
+#print('GEFEG Flesh Reading Score: ' + str(textstat.flesch_reading_ease(GEFEF_normal_text)))
+#print('Ecosio Flesh Reading Score: ' + str(textstat.flesch_reading_ease(Ecosio_normal_text)))
 
 
 
