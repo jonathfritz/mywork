@@ -29,16 +29,6 @@ with open('Quellen.csv', 'r') as csv_file:
             Ecosio_cleaned_text = clean_text(columns[3])
             Ecosio_normal_text = columns[3]
 
-with open('Quellen.csv', 'r') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=';')
-    for columns in csv_reader:
-        # An dieser Stelle werden die Quellen von GEFEG einzelnd untersucht
-        if columns[0] == 'GEFEG':
-            GEFEG_cleaned_text = clean_text(columns[3])
-            GEFEF_normal_text = columns[3]
-
-
-
 with open("Quellen.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
@@ -54,6 +44,15 @@ with open("Quellen.csv", "r") as csv_file:
             print(i)
         i += 1
 
+
+
+
+with open('Quellen.csv', 'r') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=';')
+    for column in csv_reader:
+        if column[0] == 'GEFEG':
+            print(row)
+            GEFEF_normal_text = column[3]
 
 # Die beiden Textkorpusse werden jeweils seperat auf ihre Lesefreundlichkeit gemessen.
 # Da die Satzzeichen bei diesem Test eine wichtige Rolle spielen, wurden für diesen Test die orginalen Textpassagen ohne Überabrietung genutzt.
