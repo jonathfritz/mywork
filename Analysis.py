@@ -33,9 +33,6 @@ def tokenize_text(text):
             return frequent_words.most_common(5)
 
 
-
-
-
 # Die Funktion verbindet die beiden voranggegangenen Funktionen und zeigt die 5 häufigsten Wörter für jeden einzenen Text auf,
 # ohne beispielsweise Satzzeichen zu berücksichtigen
 # with open("Quellen.csv", "r") as csv_file:
