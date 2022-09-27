@@ -74,12 +74,6 @@ def tokenize_text(text):
 #         i += 1
 
 
-def counting_words(text):
-    # Einfache Überprüfung der Anzahl an Worten pro Text
-    word_list = text.split()
-    number_of_words = len(word_list)
-    return number_of_words
-
 # Sentiment analysis
 # with open("Quellen.csv", "r") as csv_file:
 #     csv_reader = csv.reader(csv_file, delimiter=";")
