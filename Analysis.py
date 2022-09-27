@@ -1,4 +1,4 @@
-import csv;
+import csv
 import pandas as pd
 import numpy as np
 import re
@@ -7,6 +7,7 @@ import textstat
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+from nltk.sentiment import SentimentIntensityAnalyzer
 
 
 
@@ -18,7 +19,6 @@ def clean_text(text):
     text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
     text = re.sub('\w*\d\w*', '', text)
     return text
-
 
 def tokenize_text(text):
     # Diese Funktion zerteilt den Text in einzelnde Buchstaben und zählt die Häufigkeit der einzenen Wörter.
@@ -32,6 +32,24 @@ def tokenize_text(text):
             frequent_words = nltk.FreqDist(filtered_text)
             return frequent_words.most_common(5)
 
+
+# Die Funktion verbindet die beiden voranggegangenen Funktionen und zeigt die 5 häufigsten Wörter für jeden einzenen Text auf,
+# ohne beispielsweise Satzzeichen zu berücksichtigen
+# with open("Quellen.csv", "r") as csv_file:
+#     csv_reader = csv.reader(csv_file, delimiter=";")
+#     skip_header = True
+#     i = 0
+#     for row in csv_reader:
+#         if skip_header:
+#             skip_header = False
+#             continue
+#         if row[0] == "ECOSIO":
+#             result = tokenize_text(clean_text(row[3]))
+#             print('Ecosio, ' + str(row[2]) + ': ' + str(result))
+#         if row[0] == "GEFEG":
+#             result= tokenize_text(clean_text(row[3]))
+#             print('GEFEG, ' + str(row[2]) + ': ' + str(result))
+#         i += 1
 
 
 # die Artikel und Textpassagen aus dem Excel-File werden in das Programm hochgeladen
@@ -51,8 +69,7 @@ with open('Quellen.csv', 'r') as csv_file:
             GEFEG_cleaned_text = clean_text(columns[3])
             GEFEF_normal_text = columns[3]
 
-
-# Die Funktion zeigt die 5 häufigsten Wörter für jeden einzenen Text auf
+# Sentiment analysis
 with open("Quellen.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
@@ -62,12 +79,15 @@ with open("Quellen.csv", "r") as csv_file:
             skip_header = False
             continue
         if row[0] == "ECOSIO":
-            result = tokenize_text(clean_text(row[3]))
+            sia = SentimentIntensityAnalyzer()
+            result = sia.polarity_scores(row[3])
             print('Ecosio, ' + str(row[2]) + ': ' + str(result))
         if row[0] == "GEFEG":
-            result= tokenize_text(clean_text(row[3]))
+            sia = SentimentIntensityAnalyzer()
+            result = sia.polarity_scores(row[3])
             print('GEFEG, ' + str(row[2]) + ': ' + str(result))
         i += 1
+
 
 
 # Diese Funktion berechnet den flesh Reading ease Score für jeden einzelnen Artikel
