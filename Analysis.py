@@ -1,8 +1,11 @@
+import csv
 import re
 import string
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+import textstat
 
 
 
@@ -67,7 +70,7 @@ def tokenize_text(text):
 #         i += 1
 
 
-# Sentiment analysis
+# Diese Funktion berechnet die Tonalität (Sentiment) der jeweiligen
 # with open("Quellen.csv", "r") as csv_file:
 #     csv_reader = csv.reader(csv_file, delimiter=";")
 #     skip_header = True
@@ -88,19 +91,19 @@ def tokenize_text(text):
 
 
 # Diese Funktion berechnet den flesh Reading ease Score für jeden einzelnen Artikel
-# with open("Quellen.csv", "r") as csv_file:
-#     csv_reader = csv.reader(csv_file, delimiter=";")
-#     skip_header = True
-#     i = 0;
-#     for row in csv_reader:
-#         if skip_header:
-#             skip_header = False
-#             continue
-#         if row[0] == "ECOSIO":
-#             print('Ecosio Flesh Reading Score: ' + str(row[2]) + ': ' + str(textstat.flesch_reading_ease(row[3])))
-#         if row[0] == "GEFEG":
-#             print('GEFEG Flesh Reading Score: ' + str(row[2]) + ': ' + str(textstat.flesch_reading_ease(row[3])))
-#         i += 1
+with open("Quellen.csv", "r") as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=";")
+    skip_header = True
+    i = 0;
+    for row in csv_reader:
+        if skip_header:
+            skip_header = False
+            continue
+        if row[0] == "ECOSIO":
+            print('Ecosio Flesh Reading Score: ' + str(row[2]) + ': ' + str(textstat.flesch_reading_ease(row[3])))
+        if row[0] == "GEFEG":
+            print('GEFEG Flesh Reading Score: ' + str(row[2]) + ': ' + str(textstat.flesch_reading_ease(row[3])))
+        i += 1
 
 
 
