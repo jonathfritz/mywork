@@ -9,25 +9,20 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 
+
 def clean_text(text):
-    # Make text lowercase, remove text in square brackets, remove punctuation and remove words containing numbers.'''
+    # Diese Funktion reduziert die Komplexität der Textpassagen.
+    # Sie entfernt Satzzeichen, setzt bei jedem Wort die Kleinschreibung durch und entfernt Worte, in denen Nummern beinhaltet sind
     text = text.lower()
     text = re.sub('\[.*?]', '', text)
     text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
     text = re.sub('\w*\d\w*', '', text)
     return text
 
-# def tokenize_text(text):
-#     stopwords = nltk.corpus.stopwords.words("english")
-#     words = [w for w in words if w.lower() not in stopwords]
-#     words: list[str] = nltk.word_tokenize(text)
-#     frequent_words = nltk.FreqDist(words)
-#     lower_frequent_words = nltk.FreqDist([w.lower() for w in frequent_words])
-#     stopwords = nltk.corpus.stopwords.words("english")
-#     filtered_words = [t for t in lower_frequent_words if not t in stopwords.words("english")]
-#     return filtered_words.most_common(10)
 
 def tokenize_text(text):
+    # Diese Funktion zerteilt den Text in einzelnde Buchstaben und zählt die Häufigkeit der einzenen Wörter.
+    # Die fünf Wörter, die am häufigsten erwähnt werden, sind das abschließende Ergebnis
     stop_words = set(stopwords.words('english'))
     word_tokens = word_tokenize(text)
     filtered_text = [w for w in word_tokens if not w.lower() in stop_words]
@@ -57,6 +52,7 @@ with open('Quellen.csv', 'r') as csv_file:
             GEFEF_normal_text = columns[3]
 
 
+# Die Funktion zeigt die 5 häufigsten Wörter für jeden einzenen Text auf
 with open("Quellen.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
@@ -74,16 +70,7 @@ with open("Quellen.csv", "r") as csv_file:
         i += 1
 
 
-
-
-
-
-
-
-
-
-
-# Flesch_reading_ease_score Completed
+# Diese Funktion berechnet den flesh Reading ease Score für jeden einzelnen Artikel
 # with open("Quellen.csv", "r") as csv_file:
 #     csv_reader = csv.reader(csv_file, delimiter=";")
 #     skip_header = True
@@ -96,7 +83,6 @@ with open("Quellen.csv", "r") as csv_file:
 #             print('Ecosio Flesh Reading Score: ' + str(row[2]) + ': ' + str(textstat.flesch_reading_ease(row[3])))
 #         if row[0] == "GEFEG":
 #             print('GEFEG Flesh Reading Score: ' + str(row[2]) + ': ' + str(textstat.flesch_reading_ease(row[3])))
-#
 #         i += 1
 
 
