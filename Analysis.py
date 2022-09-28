@@ -21,7 +21,7 @@ def clean_text(text):
 
 def tokenize_text(text):
     # Diese Funktion zerteilt den Text in einzelne Buchstaben und zählt die Häufigkeit der einzenen Wörter.
-    # Die fünf Wörter, die am häufigsten erwähnt werden, sind das abschließende Ergebnis
+    # Die fünf Wörter, die am häufigsten erwähnt werden, sind das abschließende Ergebnis. Füllwörter wie "and" und "the" werden vor der Zählung entfernt.
     stop_words = set(stopwords.words('english'))
     word_tokens = word_tokenize(text)
     filtered_text = [w for w in word_tokens if not w.lower() in stop_words]
@@ -32,8 +32,8 @@ def tokenize_text(text):
             return frequent_words.most_common(5)
 
 
-# Die Funktion verbindet die beiden voranggegangenen Funktionen und zeigt die 5 häufigsten Wörter für jeden einzenen Text auf,
-# ohne beispielsweise Satzzeichen zu berücksichtigen
+# Die Funktion verbindet die beiden voranggegangenen Funktionen und zeigt die 5 häufigsten Wörter für jeden einzelnen Text auf,
+# ohne störende Elemente wie beispielsweise Satzzeichen zu berücksichtigen.
 # with open("Quellen.csv", "r") as csv_file:
 #     csv_reader = csv.reader(csv_file, delimiter=";")
 #     skip_header = True
@@ -50,7 +50,7 @@ def tokenize_text(text):
 #             print('GEFEG, ' + str(row[2]) + ': ' + str(result))
 #         i += 1
 
-# # Count Words
+# # Diese Funktion zählt die Anzahl der Wörter in jedem Text
 # with open("Quellen.csv", "r") as csv_file:
 #     csv_reader = csv.reader(csv_file, delimiter=";")
 #     skip_header = True
@@ -70,7 +70,7 @@ def tokenize_text(text):
 #         i += 1
 
 
-# Diese Funktion berechnet die Tonalität (Sentiment) der jeweiligen
+# Diese Funktion berechnet die Tonalität (Sentiment) der jeweiligen Text
 # with open("Quellen.csv", "r") as csv_file:
 #     csv_reader = csv.reader(csv_file, delimiter=";")
 #     skip_header = True
@@ -94,7 +94,7 @@ def tokenize_text(text):
 with open("Quellen.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
-    i = 0;
+    i = 0
     for row in csv_reader:
         if skip_header:
             skip_header = False
