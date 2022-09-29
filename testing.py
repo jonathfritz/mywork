@@ -1,34 +1,99 @@
-import csv;
-import pandas as pd
-import numpy as np
+"""Anbei sind die Libaries aufgelistet, die für die genutzten Methoden benutzt wurden."""
+import csv
 import re
 import string
-import textstat
 import nltk
-from transformers import pipeline
-import pprint
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+import textstat
 
-# Step 1: Read in Data
-
-
-
+"""Diese Funktion reduziert die Komplexität der Textpassagen.
+Sie entfernt Satzzeichen, setzt bei jedem Wort die Kleinschreibung
+durch und entfernt Worte, in denen Nummern beinhaltet sind. """
 def clean_text(text):
-    # Make text lowercase, remove text in square brackets, remove punctuation and remove words containing numbers.'''
     text = text.lower()
-    text = re.sub('\[.*?\]', '', text)
+    text = re.sub('\[.*?]', '', text)
     text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
     text = re.sub('\w*\d\w*', '', text)
     return text
 
-# die Artikel und Textpassagen aus dem Excel-File werden in das Programm hochgeladen
-with open('Quellen.csv', 'r') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=';')
-    for columns in csv_reader:
-        # An dieser Stelle werden die Quellen von GEFEG einzelnd untersucht
-        if columns[0] == 'ECOSIO':
-            Ecosio_cleaned_text = clean_text(columns[3])
-            Ecosio_normal_text = columns[3]
 
+"""Diese Funktion zerteilt den Text in einzelne Buchstaben und zählt die Häufigkeit der einzelnen Wörter.
+Die fünf Wörter, die am häufigsten erwähnt werden, sind das abschließende Ergebnis. """
+def tokenize_text(text):
+
+    stop_words = set(stopwords.words('english'))
+    word_tokens = word_tokenize(text)
+    filtered_text = [w for w in word_tokens if not w.lower() in stop_words]
+    for w in word_tokens:
+        if w not in stop_words:
+            filtered_text.append(w)
+            frequent_words = nltk.FreqDist(filtered_text)
+            return frequent_words.most_common(5)
+
+
+"""Die Funktion verbindet die beiden voranggegangenen Funktionen und zeigt die fünf häufigsten Wörter für jeden einzelnen Text auf,
+ohne beispielsweise Satzzeichen als Ergebnis bei der Zählung zu berücksichtigen"""
+with open("Quellen.csv", "r") as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=";")
+    skip_header = True
+    i = 0
+    for row in csv_reader:
+        if skip_header:
+            skip_header = False
+            continue
+        if row[0] == "ECOSIO":
+            result = tokenize_text(clean_text(row[3]))
+            print('Ecosio, ' + str(row[2]) + ': ' + str(result))
+        if row[0] == "GEFEG":
+            result= tokenize_text(clean_text(row[3]))
+            print('GEFEG, ' + str(row[2]) + ': ' + str(result))
+        i += 1
+
+"""Eine Funktion, welche die Worte in jedem Text zählt."""
+with open("Quellen.csv", "r") as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=";")
+    skip_header = True
+    i = 0
+    for row in csv_reader:
+        if skip_header:
+            skip_header = False
+            continue
+        if row[0] == "ECOSIO":
+            word_list = row[3].split()
+            result = number_of_words = len(word_list)
+            print('Ecosio, ' + str(row[2]) + ': ' + str(result))
+        if row[0] == "GEFEG":
+            word_list = row[3].split()
+            result = number_of_words = len(word_list)
+            print('GEFEG, ' + str(row[2]) + ': ' + str(result))
+        i += 1
+
+
+"""Diese Funktion berechnet die Tonalität (Sentiment) der jeweiligen Texte. 
+Bei dieser Funktion wurden die Füllwörter nicht entfernt. 
+Versuche mit Änderungen des Programmcodes ein aussagekräftigeres Ergebnis zu erhalten haben keine besseren Ergebnisse erzielt."""
+with open("Quellen.csv", "r") as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=";")
+    skip_header = True
+    i = 0
+    for row in csv_reader:
+        if skip_header:
+            skip_header = False
+            continue
+        if row[0] == "ECOSIO":
+            sia = SentimentIntensityAnalyzer()
+            result = sia.polarity_scores(row[3])
+            print('Ecosio, ' + str(row[2]) + ': ' + str(result))
+        if row[0] == "GEFEG":
+            sia = SentimentIntensityAnalyzer()
+            result = sia.polarity_scores(row[3])
+            print('GEFEG, ' + str(row[2]) + ': ' + str(result))
+        i += 1
+
+
+"""Diese Funktion berechnet den flesh Reading ease Score für jeden einzelnen Artikel."""
 with open("Quellen.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
@@ -37,38 +102,12 @@ with open("Quellen.csv", "r") as csv_file:
         if skip_header:
             skip_header = False
             continue
+        if row[0] == "ECOSIO":
+            print('Ecosio Flesh Reading Score: ' + str(row[2]) + ': ' + str(textstat.flesch_reading_ease(row[3])))
         if row[0] == "GEFEG":
-            print(i)
-        i += 1
-        if row[0] == "Ecosio":
-            print(i)
+            print('GEFEG Flesh Reading Score: ' + str(row[2]) + ': ' + str(textstat.flesch_reading_ease(row[3])))
         i += 1
 
 
 
 
-with open('Quellen.csv', 'r') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=';')
-    for column in csv_reader:
-        if column[0] == 'GEFEG':
-            print(row)
-            GEFEF_normal_text = column[3]
-
-# Die beiden Textkorpusse werden jeweils seperat auf ihre Lesefreundlichkeit gemessen.
-# Da die Satzzeichen bei diesem Test eine wichtige Rolle spielen, wurden für diesen Test die orginalen Textpassagen ohne Überabrietung genutzt.
-print('GEFEG Flesh Reading Score: ' + str(textstat.flesch_reading_ease(GEFEF_normal_text)))
-print('Ecosio Flesh Reading Score: ' + str(textstat.flesch_reading_ease(Ecosio_normal_text)))
-
-
-
-words = [w for w in nltk.corpus.state_union.words() if w.isalpha()]
-stopwords = nltk.corpus.stopwords.words("english")
-#Wörter ohne Stoppwörter (aber alle in lower case)
-words = [w for w in words if w.lower() not in stopwords]
-
-# use str.isalpha to filter out punctuation
-#pprint((nltk.word_tokenize(GEFEG_cleaned_text), width=79, compact=True)
-
-#sentiment_pipeline = pipeline("sentiment-analysis")
-#data = ["I love you", "I hate you"]
-#sentiment_pipeline(data)

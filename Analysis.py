@@ -19,7 +19,7 @@ def clean_text(text):
     return text
 
 
-"""Diese Funktion zerteilt den Text in einzelne Buchstaben und zählt die Häufigkeit der einzelnen Wörter.
+"""Diese Funktion zerteilt den Text in einzelne Wörter und zählt anschließend deren Häufigkeit.
 Die fünf Wörter, die am häufigsten erwähnt werden, sind das abschließende Ergebnis. """
 def tokenize_text(text):
 
