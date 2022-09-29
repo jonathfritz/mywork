@@ -1,4 +1,4 @@
-"""Anbei sind die Libaries aufgelistet, die für die genutzten Methoden benutzt wurden."""
+"""Anbei sind die Bibliotheken (normalerweise Libaries genannt) aufgelistet, die für die genutzten Methoden benutzt wurden."""
 import csv
 import re
 import string
@@ -10,7 +10,7 @@ import textstat
 
 """Diese Funktion reduziert die Komplexität der Textpassagen.
 Sie entfernt Satzzeichen, setzt bei jedem Wort die Kleinschreibung
-durch und entfernt Worte, in denen Nummern beinhaltet sind. """
+durch und entfernt Worte, in denen Nummern beinhaltet sind."""
 def clean_text(text):
     text = text.lower()
     text = re.sub('\[.*?]', '', text)
