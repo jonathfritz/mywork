@@ -1,4 +1,4 @@
-"""Anbei sind die Bibliotheken (normalerweise Libaries genannt) aufgelistet, die für die genutzten Methoden benutzt wurden."""
+"""Anbei sind die Bibliotheken (Libaries) aufgelistet, die für die genutzten Methoden benutzt wurden."""
 import csv
 import re
 import string
@@ -12,6 +12,7 @@ import textstat
 Sie entfernt Satzzeichen, setzt bei jedem Wort die Kleinschreibung
 durch und entfernt Worte, in denen Nummern beinhaltet sind."""
 def clean_text(text):
+
     text = text.lower()
     text = re.sub('\[.*?]', '', text)
     text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
@@ -36,6 +37,8 @@ def tokenize_text(text):
 """Diese Funktion verbindet die beiden voranggegangenen Funktionen und zeigt die fünf häufigsten Wörter für jeden einzelnen Text auf,
 ohne beispielsweise Satzzeichen als Ergebnis bei der Zählung zu berücksichtigen"""
 with open("Quellen.csv", "r") as csv_file:
+    print("")
+    print("Auflistung der 5 meist genannten Schlüsselwörter pro Text.")
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
     i = 0
@@ -53,6 +56,9 @@ with open("Quellen.csv", "r") as csv_file:
 
 """Eine Funktion, welche die Worte in jedem Text zählt."""
 with open("Quellen.csv", "r") as csv_file:
+    print("")
+    print("")
+    print("Berechnung Wortanzahl:")
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
     i = 0
@@ -75,6 +81,9 @@ with open("Quellen.csv", "r") as csv_file:
 Bei dieser Funktion wurden die Füllwörter nicht entfernt. 
 Versuche mit Änderungen des Programmcodes ein aussagekräftigeres Ergebnis zu erhalten haben keine besseren Ergebnisse erzielt."""
 with open("Quellen.csv", "r") as csv_file:
+    print("")
+    print("")
+    print("Berechnung der Tonalität:")
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
     i = 0
@@ -95,6 +104,9 @@ with open("Quellen.csv", "r") as csv_file:
 
 """Diese Funktion berechnet den flesh Reading ease Score für jeden einzelnen Artikel."""
 with open("Quellen.csv", "r") as csv_file:
+    print("")
+    print("")
+    print("Berechnung des flesh Reading ease scores:")
     csv_reader = csv.reader(csv_file, delimiter=";")
     skip_header = True
     i = 0;
